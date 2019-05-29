@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Sub-Window</title>
+	<style>
+		.responsive{
+			position: relative;
+			padding-bottom: 40%;
+			width: 80%;
+			height: 0;
+		}
+		.responsive iframe{
+			height: 80%;
+			width: 80%;
+			resize: both;
+			overflow : auto;
+			position: absolute;
+		}
+	</style>
+	
+</head>
+<body>
+	<form>
+		<input type="text" id="tf" align="center"><br>
+		<input type="button" id="b" value="GO" align="center" onclick="Clicked();">
+	</form>
+	<div class="responsive">
+		<iframe id="f" src="" name="fram" height="10px" width="70px"></iframe>
+	</div>
+	<script>
+		function Clicked()
+		{
+			var data = document.getElementById('tf').value;
+			document.getElementById("f").src = data;
+		}
+	</script>
+</body>
+</html>

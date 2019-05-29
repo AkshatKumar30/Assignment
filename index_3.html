@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First sub-window</title>
+	<style>
+		.responsive{
+			position: relative;
+			padding-bottom: 40%;
+			width: 80%;
+			height: 0;
+		}
+		.responsive iframe{
+			height: 80%;
+			width: 80%;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<h4>Select a website to begin with:</h4>
+	<ul>
+		<li><a href="https://webmail.iitk.ac.in/" target="fram">Webmail</a></li>
+		<li><a href="https://www.google.com/webhp?igu=1" target="fram">Google</a></li>
+		<li><a href="https://www.wikipedia.org/" target="fram">Wikipedia</a></li>
+	</ul>
+	<div class="responsive">
+		<iframe name="fram" height="10px" width="70px"></iframe>
+	</div>
+</body>
+</html>
